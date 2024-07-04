@@ -1,0 +1,46 @@
+/* Styles for the form */
+.form {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form > span{
+    transition-duration: 300ms;
+    font-size: 12px;
+}
+/* Styles for the input component */
+.input {
+    min-width: 100%;
+    transition-duration: 300ms;
+    font-size: 12px;
+    font-family: "Public Sans", sans-serif;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: var(--white-color);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+/* Remove the default outline when the input is in focus */
+.input:focus {
+    outline: none;
+}
+/* responsive for bigger than 430px */
+@media screen and (min-width: 430px) {
+    .input{
+        font-size: 16px;
+    }
+    .form > span{
+        font-size: 16px;
+    }
+    .form{
+        gap: 20px;
+    }
+    .card-action-phone{
+        display: flex;
+    }
+}
+

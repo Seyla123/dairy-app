@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diary Dashboard</title>
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/dashboard.css">
+</head>
+<body>
+  <!-- navbar -->
+    <navbar-component></navbar-component>
+     <!-- header -->
+    <header-component
+      header-title="Diary Application Dashboard"
+      btn-title="Add Entry"
+      url-btn="../index.html"
+      custom-header="header-dashboard"
+      custom-btn="btn-new-entry"
+    ></header-component>
+
+    <!-- main dashboard -->
+    <section class="main-dashboard">
+
+          <section>
+            <!-- title -->
+            <h2 class="dashboard-title">Dashboard</h2>
+
+            <!-- dashboard card -->
+             <div class="dashbaord-card-container">
+
+                <!-- dashboard card render here -->
+                <dashboard-card
+                logo-icon="../assets/diary-logo.png" 
+                url="../index.html"
+                logo-title="Diary Logo" 
+                title="Total Entries"
+                count-id="entries"
+                custom-img-containter="icon-entries"
+              ></dashboard-card>
+
+              <dashboard-card
+                logo-icon="../assets/user.png" 
+                logo-title="Diary Logo" 
+                title="Total Users"
+                count-id="users"
+              ></dashboard-card>
+             </div>
+
+          </section>
+
+          <section class="recent-entries">
+
+            <!-- title -->
+            <h2 class="dashboard-title">Recent Entries</h2>
+
+            <!-- recent entry container -->
+            <div class="recent-entries-container">
+              <!-- recent card render here -->
+            </div>
+
+          </section>
+
+    </section> 
+    <footer-component></footer-component>
+</body>
+<!-- header link -->
+<script type="module" src="../components/header.js"></script>
+<!-- button link -->
+<script src="../components/button.js"></script>
+<!-- navbar link -->
+<script type="module" src="../components/navbar.js"></script>
+<!-- footer link -->
+<script type="module" src="../components/footer.js"></script>
+<!-- dashboard card link -->
+ <script src="../components/dashbaordCard.js"></script>
+<!-- dashboard link -->
+ <script type="module" src="../scripts/dashboard.js"></script>
+</html>

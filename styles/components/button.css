@@ -1,0 +1,51 @@
+/* reset default */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+/*  Style for button */
+.btn   {
+    transition-duration: 300ms;
+    background-color:var(--purple-color);
+    font-size:  10px; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+/* change color background when hover */
+.btn:hover {
+    background-color: var(--blue-color);
+}
+.btn-primary-100{
+    transition-duration: 300ms;
+    font-size:  10px; 
+    color: #7B8DD2;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    border : 1px #6064D9 solid;
+}
+/* update cancel button */
+#updateCancel{
+    display: none;
+}
+.container-btn{
+    display: flex;
+    gap: 10px;
+}
+/* responsive for phone screen */
+@media screen and (min-width: 430px) {
+    .btn{
+    font-size: 12px;
+}
+}

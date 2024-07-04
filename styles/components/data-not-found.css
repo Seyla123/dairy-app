@@ -1,0 +1,52 @@
+/* container of not found data section */
+.container-no-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    flex: 1;
+    color:#434343;
+    transition-duration: 300ms;
+}
+.container-no-data img{
+    max-width: 100px;
+    width: 100%;
+    height: 100%;
+    transition-duration: 300ms;
+}
+.container-no-data h1{
+    font-size: 16px;
+    font-weight: bold;
+    transition-duration: 300ms;
+
+}
+.container-no-data p{
+    font-size: 8px;
+    color: #8F8B8B;
+    transition-duration: 300ms;
+
+}
+
+@media screen and (min-width: 430px) {
+    .container-no-data img{
+        max-width: 150px;
+    }
+    .container-no-data h1{
+        font-size: 20px;
+    }
+    .container-no-data p{
+        font-size: 10px;
+    }
+}
+@media screen and (min-width: 750px) {
+    .container-no-data img{
+        max-width: 200px;
+    }
+    .container-no-data h1{
+        font-size: 24px;
+    }
+    .container-no-data p{
+        font-size: 12px;
+    }
+}

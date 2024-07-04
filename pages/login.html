@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login : Web Application</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="icon" href="../assets/diary-logo.png" type="image/x-icon" />
+</head>
+<body>
+    <section class="container-section">
+        <div class="login-container">
+            <!-- image -->
+            <div class="login-image">
+                <img src="../assets/login-img.jpg" alt="login Image">
+            </div>
+
+            <!-- form container -->
+            <div class="login-form">
+                <!-- title -->
+                <h2>Welcome to Diary App</h2>
+                <p>Enter your username and password to access your account.</p>
+
+                <!-- login form -->
+                <form id="login-form">
+
+                    <!-- username -->
+                    <label for="username">Username</label>
+                    <input 
+                        type="username" 
+                        id="username" 
+                        class="input border" 
+                        name="username" 
+                        placeholder="Enter your username" 
+                        autocomplete="username"
+                        required/>
+
+                    <!-- password -->
+                    <label for="password">Password</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        class="input border" 
+                        name="password" 
+                        placeholder="Enter your password" 
+                        autocomplete="new-password"
+                        required/>
+
+                    <!-- remember me checkbox -->
+                    <div class="remember-me">
+                        <input type="checkbox" id="rememberMe" name="rememberMe">
+                        <p for="rememberMe">Remember me</p>
+                    </div>
+
+                    <!-- submit button -->
+                    <my-button title="Sign In" type="submit" custom-class="form-btn">Sign In</my-button>
+
+                    <!-- sign up link -->
+                    <div class="links">
+                        <p>Don't have an account? <a href="./sign-up.html">Sign Up</a></p>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+<!-- login script -->
+<script type="module" src="../scripts/login.js"></script>
+  <!-- button link -->
+<script src="../components/button.js"></script>
+
+
+</html>

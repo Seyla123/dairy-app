@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up : Web Application</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="icon" href="../assets/diary-logo.png" type="image/x-icon" />
+</head>
+<body>
+    <section class="container-section">
+        
+        <div class="login-container">
+
+            <!--  image -->
+            <div class="login-image">
+                <img src="../assets/signup-img.jpg" alt="signup Image">
+            </div>
+
+            <!-- form container -->
+            <div class="login-form">
+                <!-- title -->
+                <h2>Start Your Journey</h2>
+                <p>Enter your email and password to create your new account.</p>
+
+                <!-- sign up form -->
+                <form id="signup-form">
+
+                    <!-- username -->
+                    <label for="username">Username</label>
+                    <input  
+                    type="username" 
+                    id="username" 
+                    class="input border" 
+                    name="username" 
+                    placeholder="Enter your username" 
+                    autocomplete="username"
+                    required />
+
+                    <!-- password -->
+                    <label for="password">Password</label>
+                    <input 
+                    type="password" 
+                    id="password" 
+                    class="input border" 
+                    name="password" 
+                    placeholder="Enter your password" 
+                    autocomplete="new-password"
+                    required />
+
+                    <!-- remember me checkbox -->
+                    <div class="remember-me">
+                        <input type="checkbox" id="rememberMe" name="rememberMe" />
+                        <label for="rememberMe">Remember me</label>
+                    </div>
+
+                    <!-- submit button -->
+                    <my-button title="Sign Up" type="submit" custom-class="form-btn"></my-button>
+
+                    <!-- sign in link -->
+                    <div class="links">
+                        <p>have an account? <a href="./login.html">Sign in</a></p>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+<!-- button link -->
+<script src="../components/button.js"></script>
+<!-- sign up link -->
+ <script type="module" src="../scripts/signUp.js"></script>
+</html>

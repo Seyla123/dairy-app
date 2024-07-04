@@ -1,0 +1,40 @@
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-nav{
+    background-color: var(--white-color);
+    display: flex;
+    max-width: 1400px;
+    margin: 10px 10px 0px 10px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding:  20px;
+    height: 70px;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: 300ms;
+}
+.container-nav button{
+    display: flex;
+    gap: 10px;
+}
+.container-nav button:hover{
+    transition-duration: 500ms;
+    transform: rotate(1turn);
+}
+.profile-container{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+@media screen and (min-width: 750px) {
+    .container-nav{
+        font-size: 16px;
+    }
+}
